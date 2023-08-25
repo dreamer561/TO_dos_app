@@ -16,13 +16,7 @@ function App() {
     })
   
     const addTodo = (data) => {
-    // console.log(data);
-
-    // let prevState = todos;
-
-    // prevState.push(data)
-
-    // console.log(prevState);
+    
 
     setTodos([...todos, data])
   }
@@ -42,15 +36,10 @@ function App() {
       data
     })
    
-    // console.log(editData);
+    
   }
 
   const updateTodo = (index, data) => {
-    // console.log(index,data);
-
-    // todos.splice(index,1,data)
-
-    // setTodos([...todos])
 
     let newTodosArray = todos.map((value,ind,arr) => {
       if(ind === index) {
